@@ -1,4 +1,4 @@
-#include "imports.mac.h"
+#include "imports.strB.h"
 #ifndef silverchain_dep
 #define silverchain_dep
 #include "../dependencies/dep.CTextEngine.h"

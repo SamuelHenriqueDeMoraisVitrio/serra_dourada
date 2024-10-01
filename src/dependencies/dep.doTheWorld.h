@@ -1,7 +1,7 @@
 
 //silver_chain_scope_start
 //mannaged by silver chain
-#include "../imports/imports.mac.h"
+#include "../imports/imports.strB.h"
 //silver_chain_scope_end
 
 // USE  THIS FILE ONLY FOR PRODUCTION
