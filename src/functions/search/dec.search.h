@@ -9,5 +9,7 @@ int private_compare_ignore_case(const char *str1, const char *str2);
 
 ResponseSearchArray search_string(const char *texto, const char *palavra, bool diferenciar_maiusculo_minusculo);
 
+bool ResponseSearchArray_exist(ResponseSearchArray *struct_value, int position);
+
 
 

@@ -10,7 +10,8 @@
 
 typedef struct {
     ResponseSearch *searchs;
-    int size;
+    long size;
+    bool exist; 
 } ResponseSearchArray;
 
 

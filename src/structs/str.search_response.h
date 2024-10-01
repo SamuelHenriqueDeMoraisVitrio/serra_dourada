@@ -8,8 +8,8 @@
 
 typedef struct {
     char *context;
-    int position;
-    int line;
+    long position;
+    long line;
     char *path;
 } ResponseSearch;
 

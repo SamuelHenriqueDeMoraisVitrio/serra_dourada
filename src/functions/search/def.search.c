@@ -84,5 +84,23 @@ ResponseSearchArray search_string(const char *texto, const char *palavra, bool d
         }
     }
 
+    if(lista_resultados.size > 0){
+        lista_resultados.exist = true;
+    }
+
     return lista_resultados;
 }
+
+bool ResponseSearchArray_exist(ResponseSearchArray *struct_value, int position){
+    if(!struct_value){
+        return false;
+    }
+    if(!struct_value->searchs){
+        return false;
+    }
+    if(!struct_value->searchs[position].context || strcmp(struct_value->searchs[position].context, "") == 0){
+        return false;
+    }
+    return true;
+}
+
