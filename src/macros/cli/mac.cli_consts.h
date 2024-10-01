@@ -1,4 +1,8 @@
 
+//silver_chain_scope_start
+//mannaged by silver chain
+#include "../../imports/imports.inc.h"
+//silver_chain_scope_end
 
 
 #define __HELP_FLAG "h | hp | help"

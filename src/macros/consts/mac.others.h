@@ -5,10 +5,5 @@
 //silver_chain_scope_end
 
 
-
-
-#define FIND_ACTION "find"
-#define FILTER_ACTION "filter"
-
-
-
+#define UPPER_CASE_SENSITIVE true
+#define NOT_UPPER_CASE_SENSITIVI false

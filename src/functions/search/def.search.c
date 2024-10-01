@@ -6,6 +6,8 @@
 
 
 
+
+
 int private_compare_ignore_case(const char *str1, const char *str2) {
   while (*str1 && *str2) {
     if (tolower((unsigned char)*str1) != tolower((unsigned char)*str2)) {
