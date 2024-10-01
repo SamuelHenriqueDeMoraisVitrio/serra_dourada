@@ -7,6 +7,7 @@
 
 DtwNamespace dtw;
 CliNamespace cli;
+CliEntry *cliEntry;
 CTextNamespace ctext;
 
 

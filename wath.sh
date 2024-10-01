@@ -1,1 +1,1 @@
-./silver.out --src src --tags const dep globals dec def --watch
+./silver.out --src src --tags mac const dep globals dec def --watch

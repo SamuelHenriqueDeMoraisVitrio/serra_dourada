@@ -1,16 +1,18 @@
 
 //silver_chain_scope_start
 //mannaged by silver chain
-#include "imports/imports.globals.h"
+#include "imports/imports.def.h"
 //silver_chain_scope_end
 
 
 
-int main(){
+int main(int arg, char **argv){
   
   dtw = newDtwNamespace();
-  cli = newCliNamespace();
   ctext = newCTextNamespace();
+  cli = newCliNamespace();
+  cliEntry = newCLI_entry(arg, argv);
+
 
   return EXIT_SUCCESS;
 }
