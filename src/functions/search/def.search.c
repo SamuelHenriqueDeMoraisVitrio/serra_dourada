@@ -20,12 +20,17 @@ int private_compare_ignore_case(const char *str1, const char *str2) {
 }
 
 ResponseSearchArray search_string(const char *texto, const char *palavra, bool diferenciar_maiusculo_minusculo) {
-    int tamanho_texto = strlen(texto);
-    int tamanho_palavra = strlen(palavra);
-
+    
     ResponseSearchArray lista_resultados;
     lista_resultados.size = 0;
     lista_resultados.searchs = NULL;
+
+    if(!texto || !palavra){
+        return lista_resultados;
+    }
+
+    int tamanho_texto = strlen(texto);
+    int tamanho_palavra = strlen(palavra);
 
     if (tamanho_palavra == 0) {
         return lista_resultados;

@@ -8,7 +8,7 @@
 
 
 const char *flag_call_str(CliFlag *flag, int position){
-  return cli.flag.get_str(flag, position, CLI_CASE_SENSITIVE);
+  return cli.flag.get_str(flag, position, CLI_NOT_CASE_SENSITIVE);
 }
 
 int flag_call_int(CliFlag *flag, int position){

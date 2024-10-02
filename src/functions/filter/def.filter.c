@@ -2,11 +2,12 @@
 //silver_chain_scope_start
 //mannaged by silver chain
 #include "../../imports/imports.dec.h"
+#include <stdio.h>
 //silver_chain_scope_end
 
 
 
-bool filter_paths_with_text(CTextStack *self){
+bool private_filter_paths_with_text(CTextStack *self){
   
   CTextArray *elements = ctext.array.newArray();
   CTextArray *elements_ignore_path = ctext.array.newArray();
@@ -58,6 +59,24 @@ bool filter_paths_with_text(CTextStack *self){
   if(!flag_bool){
     return flag_bool;
   }
+
+  const char *text = dtw.load_string_file_content(path);
+
+  CliFlag *key = flag_call(__KEY_FLAG);
+
+  if(!text || !key->exist || !flag_call_str(key, 0)){
+    return false;
+  }
+
+  printf("\ntext:\n%s\n", text);
+
+  ResponseSearchArray search = search_string(text, flag_call_str(key, 0), !flag_call(__UPPER_CASE_SENSITIVE_FLAG)->exist);
+
+  if(!search.exist){
+    return false;
+  }
+
+  return true;
 
 }
 

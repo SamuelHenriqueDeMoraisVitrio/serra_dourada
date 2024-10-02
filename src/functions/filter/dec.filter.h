@@ -6,7 +6,7 @@
 
 
 
-bool filter_paths_with_text(CTextStack *self);
+bool private_filter_paths_with_text(CTextStack *self);
 
 
 

@@ -8,6 +8,8 @@
 #define __HELP_FLAG "h | hp | help"
 //The project
 #define __SRC_FLAG "s | src | source"
+
+#define __KEY_FLAG "k | K | key"
 //Onde não procurar
 #define __IGNORE_FIND_FLAG "if | ignore_find"
 //Quais extensões procurar
@@ -18,6 +20,8 @@
 #define __OUT_FLAG "o | out"
 
 #define __MARGIN_FLAG "m | mg | margin"
+
+#define __UPPER_CASE_SENSITIVE_FLAG "ucs | UCS | upper_case_sensitive"
 
 
 
