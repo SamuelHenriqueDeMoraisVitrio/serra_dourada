@@ -19,7 +19,7 @@ int main(int arg, char **argv){
 
   ctext.array.append_string(self, "test/b.txt");
 
-  filter_paths(self);
+  private_filter_paths(self);
 
   return EXIT_SUCCESS;
 }

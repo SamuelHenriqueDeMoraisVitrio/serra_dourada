@@ -5,6 +5,8 @@
 //silver_chain_scope_end
 
 
-void private_filter_paths(CTextArray *paths);
+void private_represent_string_array_filtered(CTextStack *self);
+
+
 
 

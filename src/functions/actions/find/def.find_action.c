@@ -5,11 +5,8 @@
 //silver_chain_scope_end
 
 
-
-
-
-void private_filter_paths(CTextArray *paths){
-
+void private_find_action(CTextArray *paths){
+  
   CTextArray *filtered_paths = ctext.array.filter(paths, private_filter_paths_with_text);
 
   if(filtered_paths->size < 1){
@@ -17,10 +14,9 @@ void private_filter_paths(CTextArray *paths){
     return;
   }
 
-  printf("\n\tKeyword found in the following files.\n\n");
+  ctext.array.foreach(filtered_paths, private_represent_string_array_filtered);
 
-  ctext.array.foreach(filtered_paths, private_represent_paths);
-
-  printf("\n\tend\n");
-
+  printf("\tend\n");
 }
+
+
