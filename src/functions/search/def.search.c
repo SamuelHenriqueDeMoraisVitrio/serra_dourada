@@ -57,13 +57,10 @@ ResponseSearchArray search_string(const char *texto, const char *palavra, bool d
             resultado_atual->position = i;
             resultado_atual->line = linha_atual;
 
-            CliFlag *margin_flag = flag_call(__MARGIN_FLAG);
-            int margin = 8;
-            
-            if(margin_flag->exist){
-                if (margin_flag->size > 0){
-                    margin = flag_call_int(margin_flag, 0);
-                }
+            int margin = flag_call_int_by_macro(__MARGIN_FLAG, 0);
+                
+            if(margin < 1){
+                margin = 8;
             }
             
 
