@@ -68,8 +68,6 @@ bool private_filter_paths_with_text(CTextStack *self){
     return false;
   }
 
-  printf("\ntext:\n%s\n", text);
-
   ResponseSearchArray search = search_string(text, flag_call_str(key, 0), !flag_call(__UPPER_CASE_SENSITIVE_FLAG)->exist);
 
   if(!search.exist){
