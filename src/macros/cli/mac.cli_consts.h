@@ -23,6 +23,8 @@
 
 #define __UPPER_CASE_SENSITIVE_FLAG "ucs | UCS | upper_case_sensitive"
 
+#define __TIPE_ACTION_FLAG "tac | tpac | tipe_action"
+
 
 
 

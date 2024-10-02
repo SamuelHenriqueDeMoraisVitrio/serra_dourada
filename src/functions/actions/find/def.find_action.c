@@ -9,6 +9,7 @@ void private_find_action(CTextArray *paths){
   
   CTextArray *filtered_paths = ctext.array.filter(paths, private_filter_paths_with_text);
 
+
   if(filtered_paths->size < 1){
     perror(RED "\n\tNo key found in source\n" RESET);
     return;

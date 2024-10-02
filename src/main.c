@@ -15,11 +15,7 @@ int main(int arg, char **argv){
   cli = newCliNamespace();
   cliEntry = newCLI_entry(arg, argv);
 
-  CTextArray *self = ctext.array.newArray();
-
-  ctext.array.append_string(self, "test/b.txt");
-
-  private_filter_paths(self);
+  call_actions();
 
   return EXIT_SUCCESS;
 }
