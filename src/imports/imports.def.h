@@ -6,5 +6,6 @@
 #include "../functions/cli/flags/call_with_macro/def.cli_macro.c"
 #include "../functions/cli/flags/def.flag_call.c"
 #include "../functions/cli/free/def.cli_entry_free.c"
+#include "../functions/filter/def.filter.c"
 #include "../functions/search/def.search.c"
 #endif
