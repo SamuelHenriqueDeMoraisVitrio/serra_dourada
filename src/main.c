@@ -15,9 +15,11 @@ int main(int arg, char **argv){
   cli = newCliNamespace();
   cliEntry = newCLI_entry(arg, argv);
 
-  CTextStack *self = ctext.stack.newStack_string("test/b.txt");
+  CTextArray *self = ctext.array.newArray();
 
-  printf("\n\t%s\n\n", private_filter_paths_with_text(self)?"true":"false");
+  ctext.array.append_string(self, "test/b.txt");
+
+  filter_paths(self);
 
   return EXIT_SUCCESS;
 }

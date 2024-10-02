@@ -4,5 +4,6 @@
 #include "../macros/cli/mac.actions.h"
 #include "../macros/cli/mac.cli_consts.h"
 #include "../macros/cli/mac.cli_responses.h"
+#include "../macros/consts/mac.colors.h"
 #include "../macros/consts/mac.others.h"
 #endif

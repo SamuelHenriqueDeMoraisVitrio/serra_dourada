@@ -2,7 +2,6 @@
 //silver_chain_scope_start
 //mannaged by silver chain
 #include "../../imports/imports.dec.h"
-#include <stdio.h>
 //silver_chain_scope_end
 
 
@@ -65,7 +64,8 @@ bool private_filter_paths_with_text(CTextStack *self){
   CliFlag *key = flag_call(__KEY_FLAG);
 
   if(!text || !key->exist || !flag_call_str(key, 0)){
-    return false;
+    perror(RED "\n\tinvalid key or file is not readable.\n" RESET);
+    exit(EXIT_FAILURE);
   }
 
   ResponseSearchArray search = search_string(text, flag_call_str(key, 0), !flag_call(__UPPER_CASE_SENSITIVE_FLAG)->exist);
