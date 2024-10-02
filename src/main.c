@@ -15,9 +15,9 @@ int main(int arg, char **argv){
   cli = newCliNamespace();
   cliEntry = newCLI_entry(arg, argv);
 
-  CTextArray *self = ctext.array.newArray();
+  CTextStack *self = ctext.stack.newStack_string("sla/sui/nsei.txt");
 
-  filter_paths_with_text(self);
+  printf("\n\t%s\n\n", filter_paths_with_text(self)?"true":"false");
 
   return EXIT_SUCCESS;
 }

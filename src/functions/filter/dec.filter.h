@@ -6,7 +6,7 @@
 
 
 
-bool filter_paths_with_text(CTextArray *self);
+bool filter_paths_with_text(CTextStack *self);
 
 
 
